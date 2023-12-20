@@ -1,0 +1,63 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --background-light-pink: hsl(275, 100%, 97%);
+  --text-grayish-purple: hsl(292, 16%, 49%);
+  --text-dark-purple: hsl(292, 42%, 14%);
+  --fw-400-sans-serif: 400;
+  --fw-600-sans-serif: 600;
+  --fw-700-sans-serif: 700;
+
+  
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+  background-repeat: no-repeat;
+  background-image: url("./assets/images/background-pattern-desktop.svg");
+  background-color: var(--background-light-pink);
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url("./assets/images/background-pattern-mobile.svg");
+  }
+  h2 {
+    font-size: 0.875rem;
+    font-weight: var(--fw-600-sans-serif);
+    color: var(--text-dark-purple)
+  }
+  h1 {
+    font-size: 1rem;
+    font-weight: var(--fw-700-sans-serif);
+    color: var(--text-dark-purple)
+  }
+  p {
+    font-size: .75rem;
+    font-weight: var(--fw-400-sans-serif);
+    color: var(--text-grayish-purple)
+  }
+}
+
+.faq-container {
+    align-content: center;
+    margin: 144px 23px;
+    padding: 27px 23px;
+    background-color: var(--color-white);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
