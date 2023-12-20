@@ -38,10 +38,12 @@ body {
   h2 {
     font-size: 0.875rem;
     font-weight: var(--fw-600-sans-serif);
-    color: var(--text-dark-purple)
+    color: var(--text-dark-purple);
+    margin: 0;
+    padding:0;
   }
   h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: var(--fw-700-sans-serif);
     color: var(--text-dark-purple)
   }
@@ -59,5 +61,19 @@ body {
     background-color: var(--color-white);
     border-radius: 6px;
     overflow: hidden;
+}
+
+.faq {
+    display:flex; 
+    flex-direction: row;
+    justify-content: left;
+    align-items: "center";
+
+}
+.accordion-head {
+    display:flex; 
+    flex-direction: row;
+    justify-content: left;
+    align-items: "center";
 }
 
